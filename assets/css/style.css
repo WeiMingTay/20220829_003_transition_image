@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: darkslategray;
+    padding: 10rem;
+}
+section {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+}
+img {
+    margin: .1rem;
+    width: 100%;
+    height: 500%;
+}
+div {
+    width: 100%;
+    height: 100%;
+    background: rgba(155,0,0,.5);
+    position: absolute;
+    transform: scaley(0);
+    bottom: 0;
+    transition: transform 250ms ease-in;
+}
+section:hover div {
+    content: "Discover";
+    transform: scaley(1);
+}
