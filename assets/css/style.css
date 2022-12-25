@@ -1,40 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-    background-color: darkslategray;
-    padding: 10rem;
+	background-color: darkslategray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
 }
 section {
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 500px;
+	background-color: #fff;
+	display: flex;
+	position: relative;
+    /* width: 500px; */
 }
 img {
-    margin: .1rem;
-    width: 100%;
-    height: 500%;
+	margin: 0.5rem;
+	width: 100%;
+    
 }
 div {
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.5);
-    position: absolute;
-    transform: scaleY(0);
-    transform-origin: bottom;
-    transition: transform 250ms ease-in;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	transition: transform 250ms ease-in;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    cursor: pointer;
 }
 section:hover div {
-    content: "Discover";
-    transform: scaley(1);
+	content: "Discover";
+	transform: scaley(1);
 }
